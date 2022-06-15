@@ -25,17 +25,9 @@ a {
 body {
     font-family:  'Roboto','Raleway', sans-serif;
     font-weight: 400;
+    color: #212121;
+    background-color: #fff;
 }
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-:not(svg) {
-    transform: 0px 0px;
-}
-
-
 
 .container {
     width: 1200px;
@@ -153,7 +145,7 @@ header {
 .background-main {
     max-width: 1600px;
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/image.main.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/image.main.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -492,14 +484,17 @@ header {
     margin-bottom: 30px;
     cursor: pointer;
     color: #afb1b8;
-    fill: #2196F3;
+}
+
+.company1 {
+    width: 41px;
+    height: 48px;
 }
 
 .clients-list-item-icon {
-    width: 41px;
-    height: 48px;
     display: flex;
     align-self: center;
+    --clients-list-item-icon-color: currentcolor;
 }
 
 .clients-list-item:hover,
@@ -509,6 +504,10 @@ header {
 
 /*footer*/
 
+ .footer-flex {
+    display: flex;
+}
+
 .footer {
     background-color: #2f303a;
     color: #fff;
@@ -516,6 +515,9 @@ header {
     font-style: normal;
 }
 
+.footer-address {
+    margin-right: 70px;
+}
 .footer-logo {
     font-family: 'Raleway';
     font-weight: 700;
