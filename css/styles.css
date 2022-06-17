@@ -437,6 +437,7 @@ header {
     width: 20px;
     height: 20px;
     fill: currentColor;
+    color: #000;
 }
 
 .picture-team {
