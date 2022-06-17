@@ -91,6 +91,8 @@ header {
 .list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-left: -50px;
 }
 
 .navigation-link {
@@ -117,7 +119,7 @@ header {
     margin-right: auto;
 }
 
-.contakt-link {
+.contakt-link-item {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -130,11 +132,30 @@ header {
     margin-left: auto;
 }
 
-.contakt-link:hover,
-.contakt-link:focus {
+.contakt-link-item:hover,
+.contakt-link-item:focus {
     color: var(--blue);
 }
 
+.contakt-link-item a {
+    display: flex;
+    align-items: center;
+}
+
+.contakt-link-item .icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contakt-link-item .envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.smartfon {
+    width: 10px;
+    height: 36px;
+}
 
 /*-------Fist section html----- */
 
