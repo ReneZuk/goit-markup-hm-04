@@ -147,14 +147,16 @@ header {
     margin-right: 10px;
 }
 
-.contakt-link-item .envelope {
+.envelope {
     width: 16px;
     height: 12px;
+    fill: #757575
 }
 
 .smartfon {
     width: 10px;
     height: 36px;
+    fill: #757575;
 }
 
 /*-------Fist section html----- */
