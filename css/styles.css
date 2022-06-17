@@ -10,10 +10,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 :root {
     --white: #FFFFFF;
     --blue: #2196F3;
@@ -27,6 +23,10 @@ body {
     font-weight: 400;
     color: #212121;
     background-color: #fff;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -410,7 +410,7 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .post-social-list {
@@ -418,6 +418,11 @@ header {
     display: flex;
     align-items: center;
     margin-left: -10px;
+}
+
+figcaption {
+padding: 30px;
+flex-direction: column;
 }
 
 .post-social-list-item {
@@ -437,7 +442,12 @@ header {
     width: 20px;
     height: 20px;
     fill: currentColor;
-    color: #000;
+}
+
+.post-social-list-item:hover,
+.post-social-list-item:focus {
+    background-color: #2196F3;
+    color: #fff;
 }
 
 .picture-team {
@@ -488,19 +498,45 @@ header {
     color: #afb1b8;
 }
 
-.company1 {
+.clients-list-item-icon {
+    display: flex;
+    align-self: center;
+    fill: currentcolor;
+}
+
+.clients-list-item .company1 {
     width: 41px;
     height: 48px;
 }
 
-.clients-list-item-icon {
-    display: flex;
-    align-self: center;
-    --clients-list-item-icon-color: currentcolor;
+.clients-list-item .company2 {
+    width: 40px;
+    height: 53px;
+}
+
+.clients-list-item .company3 {
+    width: 45px;
+    height: 42px;
+}
+
+.clients-list-item .company4 {
+    width: 85px;
+    height: 42px;
+}
+
+.clients-list-item .company5 {
+    width: 63px;
+    height: 47px;
+}
+
+.clients-list-item .company6 {
+    width: 94px;
+    height: 45px;
 }
 
 .clients-list-item:hover,
 .clients-list-item:focus {
+    border: 1px solid #2196F3;
     color: #2196F3;
 }
 
@@ -610,5 +646,6 @@ margin-bottom: 0;
 
 .footer-social-list-item:hover,
 .footer-social-list-item:focus {
-    color: #2196F3;
+    background-color: #2196F3;
+    color: #fff;
 }
