@@ -37,7 +37,7 @@ a {
 
 /* --------Logo header-----------*/
 
-header {
+.header {
     border-bottom: 1px solid #ececec;
     background-color: #fff;
     padding: 25px 0;
@@ -54,11 +54,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.navigation {
-    background: var(--white);
-    display: flex;
 }
 
 .navigation-logo {
@@ -92,7 +87,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: -50px;
+    margin-left: 46px;
 }
 
 .navigation-link {
@@ -110,11 +105,12 @@ header {
 .navigation-link:hover,
 .navigation-link:focus {
     color: var(--blue);
+    
 }
 
 /*-------Contact---------*/
 
-.contakt-link.tel {
+.contakt-link .tel {
     margin-left: 50px;
     margin-right: auto;
 }
@@ -135,6 +131,7 @@ header {
 .contakt-link-item:hover,
 .contakt-link-item:focus {
     color: var(--blue);
+    fill: #2196F3;
 }
 
 .contakt-link-item a {
